@@ -13,8 +13,8 @@ app.use(express.static('src/docs/'));
 app.get('/', (req, res) => {
 	res.send('hello word!');
 });
-// app.use('/api/login', require('./routes/login'));
-// app.use('/api/register', require('./routes/register'));
+app.use('/api/login', require('./routes/login'));
+app.use('/api/register', require('./routes/register'));
 // app.use('/api/groups', require('./routes/groups'));
 // app.use('/api/contact', require('./routes/contact'));
 // app.use('/api/events', require('./routes/events'));
